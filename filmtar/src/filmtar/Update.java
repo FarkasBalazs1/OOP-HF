@@ -18,7 +18,7 @@ public class Update implements Command{
 					l.set(i, f);
 				}
 				else if(l.get(i).getClass().toString().equals("class filmtar.Dokumentumfilm")) {
-					Dokumentumfilm f = Dokumentumfilm.class.cast(l.get(i));
+					Dokumentumfilm f = (Dokumentumfilm)l.get(i);
 					f.setDescription(cmd[5]);
 					l.set(i, f);
 				}

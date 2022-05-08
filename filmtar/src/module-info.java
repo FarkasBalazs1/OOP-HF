@@ -1,2 +1,3 @@
 module filmtar {
+	requires junit;
 }
