@@ -1,13 +1,9 @@
 package filmtar;
 import java.util.Scanner;
-import java.io.File;
 import java.util.ArrayList;
 public class Main {
 	
-	protected static File wd;
-	
 	public static void main(String[] args) {
-		wd = new File(System.getProperty("user.dir"));
 		ArrayList<Filmek> movies = new ArrayList<Filmek>();
 		ArrayList<Command> cmd = new ArrayList<Command>();
 		cmd.add(new Add());
@@ -27,7 +23,12 @@ public class Main {
 			}
 			for(int i = 0; i<cmd.size(); i++) {
 				if(cmd.get(i).getName().equals(datasplit[0])) {
-					cmd.get(i).action(datasplit, movies);
+					try {
+						cmd.get(i).action(datasplit, movies);
+					}
+					catch(Exception e) {
+						System.err.println(e.getMessage());
+					}
 				}
 			}
 			
