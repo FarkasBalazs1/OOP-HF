@@ -13,7 +13,7 @@ public class Delete implements Command{
 			}
 		}
 		if(!done) {
-			System.out.println("A megadott index nem létezik.");
+			System.err.println("A megadott index nem létezik.");
 		}
 	}
 }

@@ -7,8 +7,7 @@ import java.io.PrintWriter;
 
 public class Save implements Command{
 	public String getName() { return "save"; }
-	public void action(String[] cmd, ArrayList<Filmek> l) {
-		try {
+	public void action(String[] cmd, ArrayList<Filmek> l) throws IOException{
 		FileWriter fw = new FileWriter(cmd[1]);
 		PrintWriter pw = new PrintWriter(fw);
 		for (int i = 0; i < l.size(); i++) {
@@ -23,9 +22,6 @@ public class Save implements Command{
 			}
 		}
 		pw.close();
-		} catch (IOException e) {
-			System.out.println(e.getMessage());
-		}
+		fw.close();
 	}
-
 }
