@@ -6,21 +6,14 @@ import java.util.ArrayList;
 
 import org.junit.Before;
 import org.junit.Test;
-<<<<<<< Updated upstream
-
-=======
 /**Az Add osztály tesztelésére szolgál.*/
->>>>>>> Stashed changes
 public class AddTest {
 	ArrayList<Filmek> l = new ArrayList<Filmek>();
 	ArrayList<Filmek> l2 = new ArrayList<Filmek>();
 	Filmek f1, f2, f3;
 	Command c = new Add();
-<<<<<<< Updated upstream
-=======
 	
 	/**Teszt objektumok létrehozása*/
->>>>>>> Stashed changes
 	@Before
 	public void setUp() {
 		f1 = new Film("F",110,2000);
@@ -30,21 +23,14 @@ public class AddTest {
 		l2.add(f2);
 		l2.add(f3);
 	}
-<<<<<<< Updated upstream
-
-=======
 	
 	/**getName() metódus tesztelése.*/
->>>>>>> Stashed changes
 	@Test
 	public void testName() {
 		assertEquals("Add.name","add", c.getName());
 	}
-<<<<<<< Updated upstream
-=======
 	
 	/**action() metódus tesztelése.*/
->>>>>>> Stashed changes
 	@Test
 	public void testAction() throws Exception {
 		String a1 = "add " + f1.toString();

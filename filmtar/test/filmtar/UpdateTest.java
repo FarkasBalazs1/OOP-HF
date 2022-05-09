@@ -8,20 +8,14 @@ import java.util.ArrayList;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-<<<<<<< Updated upstream
-=======
 /**Update osztály metódusainak tesztelésére szolgál*/
->>>>>>> Stashed changes
 public class UpdateTest {
 	static ArrayList<Filmek> l = new ArrayList<Filmek>();
 	static ArrayList<Filmek> l2 = new ArrayList<Filmek>();
 	static Filmek f1, f2, f3, f4, f5, f6;
 	Command c = new Update();
-<<<<<<< Updated upstream
-=======
 	
 	/**Tesztobjektumok létrehozása és listák feltöltése*/
->>>>>>> Stashed changes
 	@BeforeClass
 	public static void setUp() {
 		f1 = new Film("F",110,2000);
@@ -37,12 +31,8 @@ public class UpdateTest {
 		l2.add(f5);
 		l2.add(f6);
 	}
-<<<<<<< Updated upstream
-
-=======
 	
 	/**Az action() metódus tesztelése.*/
->>>>>>> Stashed changes
 	@Test
 	public void testAction() throws Exception{
 		String a1 = "update 0 Film 120 2002";
@@ -58,11 +48,8 @@ public class UpdateTest {
 		assertNotSame("Item 1",l.get(1),l2.get(1));
 		assertNotSame("Item 2",l.get(2),l2.get(2));
 	}
-<<<<<<< Updated upstream
-=======
 	
 	/**A getName() metódus tesztelése.*/
->>>>>>> Stashed changes
 	@Test
 	public void testGetName() {
 		assertEquals("update name", "update", c.getName());

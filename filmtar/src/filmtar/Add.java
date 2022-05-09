@@ -1,10 +1,20 @@
 package filmtar;
 
 import java.util.ArrayList;
+
+/** Az elemek listához való hozzáadását megvalósító osztály. A Command osztály leszármazottja.*/
 public class Add implements Command{
 	
+	/** Stringként visszaadja a parancs nevét.
+	 * @return a parancs neve
+	 */
 	public String getName() { return "add"; }
 	
+	/** A parancs által elvégezendõ feladatot hajtja végre.
+	 * Ez a metódus a paraméterként megadott listához adja hozzá a bemeneten bekért elemet.
+	 * Az objektum típusa függ a megadott adatok típusától.
+	 * @param cmd String tömb ami a bemenetrõl bekért adatokat tartalmazza
+	 * @param l A lista amihez hozzá kívánjuk adni az elemet.*/
 	public void action(String[] cmd, ArrayList<Filmek> l) throws Exception{
 		try {
 			if(cmd[1].equals("-c")) {

@@ -2,8 +2,20 @@ package filmtar;
 
 import java.util.ArrayList;
 
+/** Az adatbázisban való keresést valósítja meg meg. A Command osztály leszármazottja.*/
 public class Search implements Command{
+	
+	/** Az objektum nevét adja vissza.
+	 * @return az objektum neve*/
 	public String getName() { return "search"; }
+	
+	/** A parancs által elvégezendõ feladatot hajtja végre.
+	 * Ez a metódus a paraméterként megadott listából keresi ki a paraméterként megadott adatot.
+	 * Több találat esetén az összeset kiírja, nulla találat esetén pedig hibaüzenetként értesíti a felhasználót.
+	 * A name és a desc attribútumokra való keresésnél a program részleges egyezést keres, a kis és nagy betûk nem számítanak.
+	 * A length, year és age attribútumoknál pontos egyezés esetén írja ki az elemet.
+	 * @param cmd a String tömb ami a bemenetrõl bekért adatokat tartalmazza.
+	 * @param l a lista amiben a keresést el kell végezni*/
 	public void action(String[] cmd, ArrayList<Filmek> l) {
 		boolean exists = false;
 		for(int i = 0; i< l.size(); i++) {

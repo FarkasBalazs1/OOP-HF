@@ -2,6 +2,8 @@ package filmtar;
 
 import java.util.Comparator;
 
+/** Comparator implementációja a Filmek típusú objektumok 
+ * length attribútumának összehasonlításához.*/
 public class LengthComparator implements Comparator<Filmek> {
 	
 	public int compare(Filmek f1, Filmek f2) {

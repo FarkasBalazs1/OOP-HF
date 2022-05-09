@@ -3,6 +3,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 public class Main {
 	
+	/**Main metódus, a felhasználóval történõ kommunikációt végzi.*/
 	public static void main(String[] args) {
 		ArrayList<Filmek> movies = new ArrayList<Filmek>();
 		ArrayList<Command> cmd = new ArrayList<Command>();

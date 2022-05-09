@@ -2,8 +2,17 @@ package filmtar;
 
 import java.util.ArrayList;
 
+/** Az adatbázis rendezését és kiírását oldja meg. A Command osztály leszármazottja.*/
 public class List implements Command{
+	
+	/** Az objektum nevét adja vissza.
+	 * @return az objektum neve*/
 	public String getName() { return "list"; }
+	
+	/** A parancs által elvégezendõ feladatot hajtja végre.
+	 * Ez a metódus a paraméterként megadott listát rendezi a megadott szempont alapján..
+	 * @param cmd String tömb ami a bemenetrõl bekért adatokat tartalmazza.
+	 * @param l a lista amit ki kell írni a kimenetre*/
 	public void action(String[] cmd, ArrayList<Filmek> l) {
 		if(cmd.length == 2) {
 			if(cmd[1].equals("name")) {
