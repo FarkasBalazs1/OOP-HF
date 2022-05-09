@@ -1,0 +1,11 @@
+Avatar 162 20cc
+Avengers:_Endgame 181 2019
+Titanic 195 1997
+Star_Wars:_The_Force_Awakens 138 2015
+-d The_Living_Planet 55 1984 A_study_of_the_ways_in_which_living_organisms_adapt_to_their_surroundings.
+-d Life_in_the_Undergrowth 50 2005 A_study_of_the_evolution_and_habits_of_invertebrates.
+Avengers:_Infinity_War 149 2018
+Spider-Man:_No_Way_Home 148 2021
+Jurassic_World 124 2015
+-c The_Lion_King 118 2019 6
+The_Avengers 143 2012
