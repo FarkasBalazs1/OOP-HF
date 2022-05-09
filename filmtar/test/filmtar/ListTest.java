@@ -7,11 +7,20 @@ import java.util.ArrayList;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+<<<<<<< Updated upstream
+=======
+/**List osztály metódusainak tesztelésére szolgál*/
+>>>>>>> Stashed changes
 public class ListTest {
 	static ArrayList<Filmek> l = new ArrayList<Filmek>();
 	static ArrayList<Filmek> l2 = new ArrayList<Filmek>();
 	static Filmek f1, f2, f3, f4, f5, f6;
 	Command c = new List();
+<<<<<<< Updated upstream
+=======
+	
+	/**Tesztobjektumok létrehozása és lista feltöltése*/
+>>>>>>> Stashed changes
 	@BeforeClass
 	public static void setUpBeforeClass() {
 		f1 = new Film("F2",130,2010);
@@ -27,7 +36,12 @@ public class ListTest {
 		l.add(f5);
 		l.add(f6);
 	}
+<<<<<<< Updated upstream
 
+=======
+	
+	/**Az action() metódus tesztelése.*/
+>>>>>>> Stashed changes
 	@Test
 	public void testAction() throws Exception{
 		String a1 = "list";
@@ -54,6 +68,11 @@ public class ListTest {
 		System.out.println();
 		c.action(s6, l);
 	}
+<<<<<<< Updated upstream
+=======
+	
+	/**A getName() metódus tesztelése.*/
+>>>>>>> Stashed changes
 	@Test
 	public void testGetName() {
 		assertEquals("list name","list",c.getName());
